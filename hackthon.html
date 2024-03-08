@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBOM Generation Tool</title>
+    <link rel="stylesheet" href="hacker.css">
+</head>
+<body>
+    <header>
+        <h1>SBOM Generation Tool</h1>
+    </header>
+    <main>
+        <!-- Form to input software details -->
+        <form id="sbomForm">
+            <label for="softwareName">Software Name:</label>
+            <input type="text" id="softwareName" name="softwareName" required><br>
+            <label for="version">Version:</label>
+            <input type="text" id="version" name="version" required><br>
+            <label for="vendor">Vendor:</label>
+            <input type="text" id="vendor" name="vendor" required><br>
+            <button type="submit">Generate SBOM</button>
+        </form>
+        <!-- Display generated SBOM -->
+        <div id="sbomResult"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
